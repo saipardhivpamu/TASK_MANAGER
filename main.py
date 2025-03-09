@@ -63,7 +63,6 @@ ttk.Button(btn_frame, text="Add Task", command=add_task, bootstyle=SUCCESS).grid
 ttk.Button(btn_frame, text="Mark Complete", command=mark_complete, bootstyle=WARNING).grid(row=0, column=1, padx=5)
 ttk.Button(btn_frame, text="Delete Task", command=delete_task, bootstyle=DANGER).grid(row=0, column=2, padx=5)
 
-# Task List
 columns = ("ID", "Status", "Title", "Description", "Priority")
 task_list = ttk.Treeview(root, columns=columns, show="headings", height=10, bootstyle="primary")
 task_list.heading("ID", text="ID")
